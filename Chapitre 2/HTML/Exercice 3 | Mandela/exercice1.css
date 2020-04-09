@@ -1,0 +1,193 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+        }
+        
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee
+        }
+        
+        article {
+            background-color: #eeeeee;
+        }
+        
+        figure {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #img-div figcaption {
+            width: 100%;
+            padding: 30px;
+            background-color: #fff;
+            -webkit-box-shadow: 1px 5px 15px -1px #a3a3a3;
+            box-shadow: 1px 5px 15px -1px #a3a3a3;
+        }
+        
+        #img-div {
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            -webkit-box-shadow: 2px 7px 15px 5px #a0a0a0;
+            box-shadow: 2px 7px 15px 5px #a0a0a0;
+        }
+        
+        #img-div img {
+            width: 40%;
+            border-radius: 900px;
+            -webkit-box-shadow: 2px 7px 15px 5px #9c9c9c;
+            box-shadow: 2px 7px 15px 5px #a3a3a3;
+        }
+        
+        h1 {
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #1d1d1d;
+            color: #fff;
+            text-align: center;
+            font-weight: lighter;
+            font-size: 10px;
+            width: 20%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            -webkit-box-shadow: 2px 0px 10px 5px #202020;
+            box-shadow: 2px 0px 10px 5px #202020;
+        }
+        
+        a {
+            padding: 30px;
+            text-decoration: none;
+        }
+        
+        h3 {
+            font-family: 'Liu Jian Mao Cao', cursive;
+            font-weight: bolder;
+            padding: 50px 0px 50px 0;
+            font-size: 20px;
+        }
+        
+        .firstpart {
+            background-color: #ffffff;
+            box-sizing: border-box;
+            padding: 50px;
+            z-index: 15;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .firstpart img,
+        .secondpart img,
+        .thirdpart img {
+            width: 25%;
+            border-radius: 180px;
+        }
+        
+        .firstpart p {
+            width: 45%;
+            padding: 30px;
+            background-color: #fff;
+        }
+        
+        h2 {
+            font-family: 'Liu Jian Mao Cao', cursive;
+            font-size: 60px;
+        }
+        
+        .signature {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 30%;
+            padding: 30px;
+            height: 350px;
+        }
+        
+        .txtsecondpart {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 40%;
+        }
+        
+        .secondpart {
+            background-color: rgb(36, 36, 36);
+            box-sizing: border-box;
+            padding: 50px;
+            z-index: 100;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            -webkit-box-shadow: 2px -7px 15px 5px #9c9c9c;
+            box-shadow: 2px -7px 15px 5px #a3a3a3;
+        }
+        
+        .thirdpart {
+            background-image: linear-gradient(to right bottom, #2e66a3, #2f6db1, #3075bf, #327ccd, #3384db);
+            box-sizing: border-box;
+            padding: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            -webkit-box-shadow: 2px -7px 15px 5px #1d1d1d;
+            box-shadow: 2px -7px 15px 5px #1a1a1a;
+        }
+        
+        .thirdpart p {
+            width: 80%;
+            -webkit-box-shadow: 2px 7px 15px 5px #25497e;
+            box-shadow: 2px 7px 15px 5px #25497e;
+            padding: 40px;
+            background-color: #fff;
+        }
+        
+        .thirdpart h3 {
+            width: 40%;
+            -webkit-box-shadow: 2px 7px 15px 5px #25497e;
+            box-shadow: 2px 7px 15px 5px #25497e;
+            padding: 40px;
+            background-color: #fff;
+        }
+        
+        .fourthpart {
+            box-sizing: border-box;
+            padding: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .fourthtxt {
+            width: 45%;
+        }
+        
+        .fourthpart img {
+            width: 30%;
+            border-radius: 180px;
+            -webkit-box-shadow: 2px 7px 15px 5px #838383;
+            box-shadow: 2px 7px 15px 5px #838383;
+        }

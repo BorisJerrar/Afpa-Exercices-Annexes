@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+p {
+    color: #fff;
+    font-size: 1em;
+    text-shadow: 1px 1px 11px rgb(0, 0, 0);
+}
+
+.clock {
+    rotate: 90deg;
+    border-radius: 1000000px;
+    background-color: #202020;
+    height: 80vh;
+    width: 80vh;
+    position: relative;
+    box-shadow: 0px 0px 11px rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.point {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 180px;
+    background-color: #ab5cc2;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.644);
+}
+
+.grandeAguille {
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70vh;
+    height: 4px;
+    background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.secondeAguille {
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70vh;
+    height: 2px;
+    background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.heureAguille {
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40vh;
+    height: 4px;
+    background: linear-gradient(90deg, #763f86 0%, #ab5cc2 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.douze {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 0deg;
+}
+
+.paradouze {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-90deg)
+}
+
+.trois {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 90deg;
+}
+
+.paratrois {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-180deg)
+}
+
+.neuf {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 270deg;
+}
+
+.six {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 180deg;
+}
+
+.parasix {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-270deg)
+}
+
+.un {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 30deg;
+}
+
+.paraun {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-120deg)
+}
+
+.deux {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 60deg;
+}
+
+.paradeux {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-150deg)
+}
+
+.quatre {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 120deg;
+}
+
+.paraquatre {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-210deg)
+}
+
+.cinq {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 150deg;
+}
+
+.paracinq {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-240deg)
+}
+
+.sept {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 210deg;
+}
+
+.parasept {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-300deg)
+}
+
+.huit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 240deg;
+}
+
+.parahuit {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-330deg)
+}
+
+.dix {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 300deg;
+}
+
+.paradix {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-30deg)
+}
+
+.onze {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 80vh;
+    rotate: 330deg;
+}
+
+.paraonze {
+    max-width: 20px;
+    height: 20px;
+    transform: rotate(-60deg)
+}

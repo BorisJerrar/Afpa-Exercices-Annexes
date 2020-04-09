@@ -1,0 +1,61 @@
+@keyframes boomboom {
+    from {
+        width: 45px;
+    }
+    30% {
+        width: 50px
+    }
+    60% {
+        width: 40px
+    }
+    to {
+        width: 45px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+p {
+    padding: 20px;
+    color: #fff;
+    background-color: #6174aa;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #b6b6b6;
+    border-radius: 180px;
+    transition: all 0.2s ease-in-out;
+}
+
+div:active {
+    -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+img {
+    width: 45px;
+    transition: all 0.1s ease-in-out;
+    animation: none;
+}
+
+div:active img {
+    width: 40px;
+    transition: all 0.1s ease-in-out;
+}

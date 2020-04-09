@@ -1,0 +1,429 @@
+@keyframes rotation {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotationplus {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(276deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+h1 {
+    z-index: 2000;
+    font-family: 'Arial Black';
+    position: relative;
+    width: 350px;
+    font-size: 5.62rem;
+    color: #4D4D4D;
+    padding-left: 80px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.534);
+    text-transform: capitalize;
+}
+
+.s {
+    transform: rotate(-31deg);
+    position: absolute;
+    left: 0;
+    top: -10px;
+    margin: auto;
+    font-size: 7rem;
+}
+
+.plus {
+    z-index: -1;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    transform: rotate(276deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+    border-radius: 2000px;
+    height: 90px;
+    background-color: #777FE3;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.534);
+    animation: ease-in-out 0.5s rotationplus;
+}
+
+.annimatedTitle img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.annimatedTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    transition: all ease-in-out 0.5s;
+}
+
+.firstsquare {
+    transform: rotate(0deg);
+    width: 58vw;
+    animation: ease-in-out 0.5s rotation reverse;
+}
+
+.secondsquare {
+    transform: rotate(0deg);
+    width: 68vw;
+    animation: ease-in-out 0.5s rotation;
+}
+
+.lastsquare {
+    transform: rotate(0deg);
+    width: 78vw;
+    animation: ease-in-out 0.5s rotation alternate-reverse;
+}
+
+.settings {
+    visibility: hidden;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/backgroundsettings.svg');
+    background-position: center;
+    transition: all ease-in-out 0.5s;
+}
+
+label {
+    font-size: 2.5625rem;
+    margin-right: 100px;
+    color: #4D4D4D;
+}
+
+.fontdiv,
+.colordiv,
+.sounddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    font-weight: lighter;
+    width: 360px;
+    padding: 5px;
+    font-size: 19px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0px;
+    height: 50px;
+    background: #fff;
+    -webkit-appearance: none;
+}
+
+.settingsvalidation {
+    position: absolute;
+    bottom: 60px;
+    right: 100px;
+    width: 94px;
+    height: 94px;
+    border-radius: 2000px;
+    background-color: rgb(227, 119, 119);
+    color: #fff;
+    font-size: 61px;
+    border: none;
+    box-shadow: 0px 0px 7px #000;
+}
+
+.fontdiv {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
+
+.sounddiv {
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+}
+
+.colorcircle {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colorcircle input {
+    width: 50px;
+    height: 50px;
+    border-radius: 2000px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.61);
+}
+
+.bluebtncolor {
+    background-color: #777fe3;
+}
+
+.orangebtncolor {
+    background-color: rgb(227, 144, 119);
+}
+
+.redbtncolor {
+    background-color: rgb(227, 119, 119);
+}
+
+.greybtncolor {
+    background-color: #797979;
+}
+
+.logodefinitiveditionflex h6 {
+    z-index: 2000;
+    font-family: 'Arial Black';
+    width: 350px;
+    font-size: 3.62rem;
+    color: #4D4D4D;
+    padding-left: 50px;
+    box-sizing: border-box;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.534);
+    text-transform: capitalize;
+    position: relative;
+}
+
+.mainboard {
+    z-index: 100;
+    visibility: visible;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 57px 0 57px 70px;
+}
+
+.sortImg {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.showingTask {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 45vh;
+    width: auto;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: normal;
+    color: rgb(227, 119, 119);
+}
+
+h5 {
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.topingtask {
+    color: #797979;
+}
+
+.timingtask {
+    color: #4D4D4D;
+}
+
+.showingTask p {
+    font-size: 35px;
+    color: rgb(232, 153, 153);
+}
+
+.showingTask div {
+    padding: 20px;
+    border-right: #707070 solid 3px;
+    position: relative;
+}
+
+div i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+    border: #E37777 solid 2px;
+    color: rgb(227, 120, 120);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.445);
+    transform: rotate(45deg);
+}
+
+.rotatecheck {
+    transform: rotate(-45deg);
+}
+
+.sdefinitiveflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-31deg);
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    margin: auto;
+    font-size: 5rem;
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid rgb(227, 119, 119);
+}
+
+.canceledbutton {
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 74px;
+    height: 74px;
+    border-radius: 2000px;
+    background-color: rgb(227, 119, 119);
+    color: #fff;
+    font-size: 81px;
+    border: none;
+    box-shadow: 0px 0px 7px #000;
+}
+
+.validnewtask {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 74px;
+    height: 74px;
+    border-radius: 2000px;
+    background-color: rgb(227, 119, 119);
+    color: #fff;
+    font-size: 55px;
+    border: none;
+    box-shadow: 0px 0px 7px #000;
+}
+
+.canceledbutton img {
+    width: 65%;
+}
+
+.addingtask {
+    visibility: visible;
+    color: rgb(227, 119, 119);
+    box-sizing: border-box;
+    border-left: solid rgb(227, 119, 119) 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: -1vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #F8F8F8;
+    box-shadow: -6px 3px 7px rgba(0, 0, 0, 0.452);
+}
+
+.addingtask form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.addingtask form textarea {
+    resize: none;
+}
+
+.addingtask form input:not(.hours),
+.addingtask select,
+.addingtask form textarea {
+    color: rgb(227, 119, 119);
+    font-weight: lighter;
+    height: 68px;
+    width: 85%;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.buttontask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.hours {
+    margin-right: 1vw;
+    text-align: center;
+    font-weight: lighter;
+    height: 68px;
+    width: 35%;
+    font-family: Helvetica, sans-serif;
+}
+
+.validnewtaskhidden {
+    width: 74px;
+    height: 74px;
+    border-radius: 2000px;
+    background-color: rgb(227, 119, 119);
+    color: #fff;
+    font-size: 61px;
+    border: none;
+    box-shadow: 0px 0px 7px #000;
+}

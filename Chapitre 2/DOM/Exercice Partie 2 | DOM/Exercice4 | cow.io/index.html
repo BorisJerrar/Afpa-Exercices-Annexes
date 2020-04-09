@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COW.IO</title>
+</head>
+
+<body>
+    <div class="leftpart">
+        <header>
+            <h1><span class="gold">C</span>OW.<span class="pinky">IO</span></h1>
+        </header>
+        <div id="resultarea">
+            <div class="scrollworking">
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexmyreslt invisible">
+                    <p></p>
+                    <div class="flexmypic">
+                        <div class="cow">
+                        </div>
+                        <div class="tarus">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expected">
+            <h3 id="randomOne">?</h3>
+            <h3 id="randomTwo">?</h3>
+            <h3 id="randomThree">?</h3>
+            <h3 id="randomFour">?</h3>
+        </div>
+    </div>
+    <div class="rightpart">
+        <div class="rightheader">
+            <div class="prosesor">Your procesor is slowly diying...</div>
+            <div id="tries">
+                <p><span class='gold'>10</span> tries reamaning...</p>
+            </div>
+        </div>
+        <div class="rightmiddle">
+            <label>
+        <input id="typpedan" onfocus="this.value=''" onsubmit="this.value=''" required placeholder="EX:0618" type="number" minlenght="4" maxlenght="4" min="1234" max="9876" autofocus="false">
+            <button onclick="brain()" onclick="updateScroll()">&#10003;</button>
+            </label>
+        </div>
+        <div class="icon">
+            <img id="help" onclick="help()" src="images/help.svg" alt="COW.IO help icone">
+        </div>
+    </div>
+    <div id="won" class="winnone">
+        <article>
+            <div id="colorall" class="winningpanel">
+                <h2 class="gold">YOU WON</h2>
+                <div class="expected">
+                    <h3 class="resultwin"></h3>
+                    <h3 class="resultwin"></h3>
+                    <h3 class="resultwin"></h3>
+                    <h3 class="resultwin"></h3>
+                </div>
+                <p>Hell Yeah. Who said robots are cleverer than humans? Not you for sur!</p>
+                <p>Maybe it was too easy for you?</p>
+                <div class="flexywin">
+                    <div class="retrybutton" onclick="retry()">
+                        <p>Play: 10 Tries</p>
+                    </div>
+                    <div class="retrybutton" onclick="retryfive()">
+                        <p>Play Hard Mode: 5 Tries</p>
+                    </div>
+                    <div class="retrybutton" onclick="retrygod()">
+                        <p>Play God Mode: ...1 Try</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="lost" class="losenone">
+        <article>
+            <div id="colorall" class="losingpanel">
+                <h2 class="pinky">YOU LOST</h2>
+                <div class="expected">
+                    <h3 class="resultloose"></h3>
+                    <h3 class="resultloose"></h3>
+                    <h3 class="resultloose"></h3>
+                    <h3 class="resultloose"></h3>
+                </div>
+                <p>Ohoh... yeah.. you've made some efforts and you didn't find anything.. Shame on you.</p>
+                <p>Exceptionaly, your computer let you another chance...</p>
+                <div class="retrybutton" onclick="retry()">
+                    <p>RETRY</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="helppage" class="helpshow">
+        <article>
+            <div class="quit">
+                <p class="pinky" onclick="helpquit()">X</p>
+            </div>
+            <div id="colorall">
+                <div class="title">
+                    <div class="presentationimg"><img class="right" src="images/cowfinish.svg" alt="cow-minimalist"><img class="left" src="images/tarusfinish.svg" alt="tarus-minimalist"></div>
+                    <div class="titletxt">
+                        <h4><span class="gold">C</span>OW.<span class="pinky">IO</span></h4>
+                        <p>As Simple, As Fun</p>
+                    </div>
+                </div>
+                <div class="helpP">
+                    <p>"Oh,oh...</p>
+                    <p>Your computer thought about a number, and decided to play with your patience. You'll have 10 tries to find the number, if not, your pc will turn of. FOREVER.</p>
+                    <p>You're pretty cleaver and you know how to speak with your machine. In HTML? C? C#? Javascript? Problem, your computer knew it, so it learnt a new language. The Cow-BullV0.01.</p>
+                    <p>In fact, if you find a good digit at the good place, your pc will help you by saying that you've just found a bull.<span><img src="images/tarusfinish.svg" alt="tarus-minimalist"></span> If you find a good digit at the wrong place,
+                        congrat', you found a cow.<span><img class="right" src="images/cowfinish.svg" alt="cow-minimalist"></span></p>
+                    <p>Oh.. One More Thing.<br />Good Luck."</p><br /><br/>
+                    <p>The number you're lookin for is a 4 digit number, with differentes values in.<br /> Expemple: 0123.<br />0121 isn't possible</p>
+                    <div class="difficulty">
+                        <input id="difficultyInput" type="number" placeholder="Choose your difficulty between 3 and 8">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <script src="cowio.js">
+    </script>
+    <script>
+        random()
+    </script>
+</body>
+
+</html>

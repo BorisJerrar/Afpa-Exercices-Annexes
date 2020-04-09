@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlla.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat|Open+Sans|Oswald|Roboto+Mono|Sen&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <title>STLLA</title>
+</head>
+
+<body>
+    <!-- firstofall logo annimation-->
+    <div class="annimatedTitle">
+        <h1><span class="s">S</span>TLLA<span class="plus">+</span></h1>
+        <img class="firstsquare" src="images/firstquare.svg" alt="first square STLLA logo">
+        <img class="secondsquare" src="images/secondsquare.svg" alt="second square STLLA logo">
+        <img class="lastsquare" src="images/lastsquare.svg" alt="last square STLLA logo">
+    </div>
+    <!------------------------------->
+    <!-- Settings  -->
+    <div class="settings">
+        <form class="settingsform">
+            <div class="fontdiv">
+                <label for="font">FONT:</label>
+                <div class="fontselection">
+                    <select id="font" name="font">
+                    <option value="OpenSans"> Open Sans (Default)</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Oswald">Oswald</option>
+                    <option value="Sen">Sen</option>
+                    <option value="RobotoMono">Roboto Mono</option>
+                    <option value="AmaticSc">Amatic SC</option>
+                </select>
+                </div>
+            </div>
+            <div class="colordiv">
+                <label for="color">COLOR:</label>
+                <div class="colorcircle">
+                    <input name="color" type="button" class="bluebtncolor">
+                    <input name="color" type="button" class="orangebtncolor">
+                    <input name="color" type="button" class="redbtncolor">
+                    <input name="color" type="button" class="greybtncolor">
+                </div>
+            </div>
+            <div class="sounddiv">
+                <label for="sound">CHECK SOUND:</label>
+                <div class="soundselection">
+                    <select id="sound" name="sound">
+                        <optgroup label="Notifications">
+                            <option value="Happy">HAPPY</option>
+                            <option value="Floral">FLORAL</option>
+                        </optgroup>                        
+                        <optgroup label="Humour">
+                            <option value="kaaris">KAARIS - M’EN BATS LES ******** FRERE</option>
+                            <option value="petitcoquin">PETIT COQUIN</option>
+                            <option value="Ok">Ok</option>
+                        </optgroup>
+                </select>
+                </div>
+            </div>
+        </form>
+        <input class="settingsvalidation" value="&#x2713;" type="button">
+    </div>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--------------------------------             finalBoard             --------------------------------------->
+    <div class="mainboard">
+        <div class="logodefinitiveditionflex">
+            <h6><span class="sdefinitiveflex">S</span>TLLA</h6>
+        </div>
+        <div class="sortImg">
+            <img src="images/sort.svg" alt="sort logo">
+            <img src="images/list.svg" alt="liste logo">
+        </div>
+        <div class="showingTask">
+            <div class="Task0">
+                <i><span class="rotatecheck">&#x2713;</span></i>
+                <h4>Your futur task here</h4>
+                <h5 class="topingtask">Free Time</h5>
+                <h5 class="timingtask">Now</h5>
+                <p>Your futur comment and list here</p>
+            </div>
+        </div>
+        <div class="firstinputcentered">
+            <img src="images/croix.svg" alt="adding logo">
+        </div>
+        <div class="addingtask">
+            <form action="">
+                <div class="hidden">
+                    <input class="inputTaskTitle" placeholder="Commencer Bootstrap" type="text">
+                    <input class="inputTaskDescription" placeholder="Ne pas oublier la doc officiel" type="text">
+                    <input class="addNew" value="&#x2713;" type="button">
+                    <input class="annulation" value="X" type="button">
+                </div>
+            </form>
+            <div class="buttontask">
+                <input class="validnewtask" value="&#x2713;" type="button">
+                <div class="canceledbutton">
+                    <img src="images/croix.svg" alt="removing logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="stlla.js">
+</script>
+
+</html>

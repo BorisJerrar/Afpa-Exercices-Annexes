@@ -1,0 +1,7 @@
+tr:nth-child(odd) {
+    background: #eee;
+}
+
+table {
+    border-collapse: collapse;
+}

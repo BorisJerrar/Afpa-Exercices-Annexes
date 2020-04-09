@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+ul {
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+li {
+    width: 70px;
+    padding: 7px;
+    transition: ease-in-out 0.3s all;
+    cursor: default;
+}
+
+header {
+    height: 40px;
+    background-color: #50052e;
+    box-shadow: 0 6px 8px rgba(59, 59, 59, 0.479);
+}
+
+.groupe,
+.colomne {
+    display: flex;
+    flex-direction: column;
+}
+
+.colomne {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
