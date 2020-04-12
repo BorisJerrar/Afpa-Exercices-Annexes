@@ -290,10 +290,10 @@ main {
 .works {
   background-color: #0e1b2e;
   padding-bottom: 100px;
+  overflow-x: scroll;
 }
 .works,
 .workWarpper {
-  overflow-x: scroll;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -334,7 +334,6 @@ main {
   width: 100%;
   height: 17px;
   background-color: #0006b2;
-  overflow: scroll;
 }
 .workScroller {
   padding: 40px 0 40px 0;
@@ -354,6 +353,7 @@ main {
   min-width: 130%;
 }
 .workScrollerContent {
+  background: #0e1b2e;
   z-index: 100;
   position: relative;
   display: flex;
@@ -617,15 +617,7 @@ footer {
     margin: auto;
   }
   .scrollAbsolute {
-    z-index: 2;
-    font-family: "";
-    position: absolute;
-    left: -40px;
-    bottom: 170px;
-    font-size: 15px;
-    transform: rotate(90deg);
-    font-family: "ProximaNova", sans-serif;
-    color: #898f99;
+    display: none;
   }
   .mainWarpper {
     padding: 50px 0 0 0;
@@ -888,7 +880,7 @@ footer {
   }
 
   .scrollAbsolute {
-    bottom: 400px;
+   display: none;
   }
 
   .mainWarpper {
