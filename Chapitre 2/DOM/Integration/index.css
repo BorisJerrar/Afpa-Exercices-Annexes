@@ -767,6 +767,8 @@ footer {
   }
 
   .clients {
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     padding-left: 0;
     padding-top: 10px;
@@ -774,7 +776,8 @@ footer {
   }
 
   .mainClients {
-    width: 8%;
+    justify-content: flex-start;
+    width: 90px;
   }
 
   .contentClients .mainClients:nth-child(2) p {
@@ -783,7 +786,7 @@ footer {
   }
 
   .contentClients .mainClients:nth-child(3) p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 10px;
     padding: 11px;
   }
@@ -806,6 +809,7 @@ footer {
   }
 
   .contentClients {
+    flex-wrap: wrap;
     padding-bottom: 50px;
     width: 90%;
   }
@@ -821,6 +825,7 @@ footer {
   .contentClients .mainClients:nth-child(1) p {
     font-size: 6px;
     line-height: 5px;
+      margin-left: 8px;
   }
   .teamsWarpper {
     display: flex;
@@ -828,8 +833,8 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     width: 90%;
-    height: 1050px;
-    padding-top: 145px;
+    height: 850px;
+padding-top: 45px;
   }
   .bottomTeams {
     width: 100%;
