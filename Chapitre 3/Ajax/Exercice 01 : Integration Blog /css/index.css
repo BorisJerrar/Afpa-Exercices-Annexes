@@ -95,3 +95,11 @@ cursor: pointer;
 table{
     display: none;
 }
+main i{
+    cursor: pointer;
+    color: #F26363;
+    background-color: #F2F2F2;
+}
+main i:hover{
+    color: rgb(167, 67, 67);
+}

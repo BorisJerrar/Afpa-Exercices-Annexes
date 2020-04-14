@@ -37,7 +37,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         trChecker[i].appendChild(tdCreation)
       }
       trChecker[i].children[0].innerHTML = json[i].name
-      trChecker[i].children[1].innerHTML = json[i].email
+      trChecker[i].children[1].innerHTML = json[i].website
       trChecker[i].children[2].innerHTML = json[i].address.city
     }
   })
