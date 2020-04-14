@@ -89,3 +89,9 @@ font-size: 40px;
 .hoverclean:hover{
     background-color: rgb(255, 255, 255);
 }
+.userall{
+cursor: pointer;
+}
+table{
+    display: none;
+}
