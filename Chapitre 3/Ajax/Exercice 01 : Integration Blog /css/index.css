@@ -1,0 +1,91 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+header{
+    background-color: #F26363;
+}
+.lisret{
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #F26363;
+}
+.men{
+    font-size: 39px;
+    color: #F2F2F2;
+    font-family: 'Phosphate', sans-serif;
+}
+.new{
+    color: #F2F2F2;
+    margin-top: -60px;
+    font-family: 'Phosphate', sans-serif;
+font-size: 130px;
+}
+.style{
+    color: #F2D0A7;
+margin-top: -60px;
+font-size: 19px;
+}
+.main{
+    background-image: url(/images/mainBg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+.mainArticle{
+    background-color: #F2F2F2;
+}
+.gold{
+    color: #D99036;
+}
+.textweight{
+    font-weight: 100;
+}
+.lastest{
+    color: #F2F2F2;
+    font-family: 'Phosphate', sans-serif;
+font-size: 130px;
+}
+.post{
+    margin-top: -80px;
+        font-size: 39px;
+        color: #F2F2F2;
+        font-family: 'Phosphate', sans-serif;
+}
+.articles{
+    background-color: #F26363;
+}
+.articleContaine{
+    background-color: #F2F2F2;
+}
+.sizeText{
+    font-size: 20px;
+}
+.largesize{
+    color: #F26363;
+    margin-top: -60px;
+    font-family: 'Phosphate', sans-serif;
+font-size: 80px;
+}
+.smallersize{
+color: #D99036;
+margin-top: -40px;
+font-family: 'Phosphate', sans-serif;
+font-size: 40px;
+}
+.carding{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.192);
+    background-color: #F1F1F1
+}
+.linkuser a{
+    color: #F26363;
+    font-family: 'Phosphate', sans-serif;
+}
+.hoverclean{
+    transition: all ease-in-out 0.2s;
+}
+.hoverclean:hover{
+    background-color: rgb(255, 255, 255);
+}
