@@ -103,3 +103,14 @@ main i{
 main i:hover{
     color: rgb(167, 67, 67);
 }
+.articleRow{
+    background-color: rgb(253, 130, 130);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.192);
+}
+.bodyArticle{
+    font-size: 15px
+}
+.titleArticle{
+    color: #F26363;
+    font-size: 21px
+}

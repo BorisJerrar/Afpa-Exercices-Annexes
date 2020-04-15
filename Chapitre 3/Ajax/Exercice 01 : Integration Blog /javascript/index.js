@@ -6,7 +6,7 @@ let tableUser = document.querySelector('table')
 let trChecker;
 let showUsers = document.querySelector('.userall')
 
-fetch('https://jsonplaceholder.typicode.com/posts')
+fetch('http://localhost:3000/posts')
   .then(response => response.json())
   .then(json => {
     for (let i = 0; i < 4; i++) {
@@ -14,20 +14,17 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       articleContent[i].innerHTML = json[i].body
     }
   })
-fetch('https://jsonplaceholder.typicode.com/users')
+fetch('http://localhost:3000/users')
   .then(response => response.json())
   .then(json => {
     console.log(json)
     for (let i = 0; i < 4; i++) {
       usersName[i].innerHTML = json[i].name
       userAcroche[i].innerHTML = json[i].company.catchPhrase
+      usersName[i].addEventListener('click', function() {
+        window.open('user.html?id='+ (i+1))
+      })
     }
-  })
-
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(json => {
-    console.log(json)
     for (let i = 0; i < json.length; i++) {
       let trCreation = document.createElement('tr')
       tableUser.appendChild(trCreation)
@@ -39,6 +36,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
       trChecker[i].children[0].innerHTML = json[i].name
       trChecker[i].children[1].innerHTML = json[i].website
       trChecker[i].children[2].innerHTML = json[i].address.city
+    }
+    for(let k = 0; k< trChecker.length; k++){
+      trChecker[k].addEventListener('click', function() {
+        window.open('user.html?id='+ (k+1))
+      })
     }
   })
 
