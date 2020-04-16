@@ -1,8 +1,7 @@
 const main = document.querySelector('main');
-const idUrl = parseInt(new URLSearchParams(window.location.search).get("id"));
+const idUrl = new URLSearchParams(window.location.search).get("id");
 const nameInner = document.querySelector('.nameInner');
 const articleInner = document.querySelector('article');
-
 const userNamerInnerHtml = () => {
   fetch('http://localhost:3000/users/' + idUrl)
     .then(response => response.json())
